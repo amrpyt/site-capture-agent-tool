@@ -5,20 +5,20 @@ Standalone Playwright CLI that captures a rendered website into static files for
 ## Use
 
 ```bash
-npx site-capture-agent-tool https://example.com --out .artifacts/example --max-pages 20
+pnpm dlx site-capture-agent-tool https://example.com --out .artifacts/example --max-pages 20
 ```
 
 Local repo use:
 
 ```bash
-npm install
-npm run capture -- https://example.com --out .artifacts/example
+pnpm install
+pnpm capture -- https://example.com --out .artifacts/example
 ```
 
 If Playwright says Chromium is missing, then run:
 
 ```bash
-npx playwright install chromium
+pnpm exec playwright install chromium
 ```
 
 ## For AI agents
@@ -30,7 +30,7 @@ Before downloading anything, check the local machine first. Do not install Chrom
 Recommended command:
 
 ```bash
-npx site-capture-agent-tool <url> --out .artifacts/site-capture --max-pages 40 --offline-qa
+pnpm dlx site-capture-agent-tool <url> --out .artifacts/site-capture --max-pages 40 --offline-qa
 ```
 
 Important outputs:
