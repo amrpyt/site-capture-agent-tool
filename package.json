@@ -1,0 +1,33 @@
+{
+  "name": "site-capture-agent-tool",
+  "version": "0.1.0",
+  "description": "Standalone Playwright site capture CLI for AI agents.",
+  "type": "module",
+  "bin": {
+    "site-capture": "./bin/site-capture.mjs"
+  },
+  "files": [
+    "AGENTS.md",
+    "LICENSE",
+    "README.md",
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node tests/smoke.mjs",
+    "capture": "node bin/site-capture.mjs"
+  },
+  "keywords": [
+    "playwright",
+    "site-capture",
+    "static-export",
+    "ai-agents"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
